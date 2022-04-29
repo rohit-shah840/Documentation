@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project4.css" />
+    <title>Project4</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Java Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Java">JavaScript and Java</a>
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables"
+            >Declaring variables</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+        <li>
+          <a class="nav-link" href="#Global_variables">Global variables</a>
+        </li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li>
+          <a class="nav-link" href="#if...else_statement"
+            >if...else statement</a
+          >
+        </li>
+        <li><a class="nav-link" href="#while_statement">while statement</a></li>
+        <li>
+          <a class="nav-link" href="#Function_declarations"
+            >Function declarations</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            JAVA was developed by James Gosling at Sun Microsystems Inc in the
+            year 1991, later acquired by Oracle Corporation. It is a simple
+            programming language. Java makes writing, compiling, and debugging
+            programming easy. It helps to create reusable code and modular
+            programs. Java is a class-based, object-oriented programming
+            language and is designed to have as few implementation dependencies
+            as possible. A general-purpose programming language made for
+            developers to write once run anywhere that is compiled Java code can
+            run on all platforms that support Java. Java applications are
+            compiled to byte code that can run on any Java Virtual Machine. The
+            syntax of Java is similar to c/c++.
+          </p>
+
+          <p>
+            The Java Class Library (JCL) is a set of dynamically loadable
+            libraries that Java Virtual Machine (JVM) languages can call at run
+            time. Because the Java Platform is not dependent on a specific
+            operating system, applications cannot rely on any of the
+            platform-native libraries. Instead, the Java Platform provides a
+            comprehensive set of standard class libraries, containing the
+            functions common to modern operating systems. JCL serves three
+            purposes within the JVM:
+          </p>
+          <ul>
+            <li>
+              Like other standard code libraries, they provide the programmer a
+              well-known set of useful facilities, such as container classes and
+              regular expression processing.
+            </li>
+            <li>
+              The library provides an abstract interface to tasks that would
+              normally depend heavily on the hardware and operating system, such
+              as network access and file access.
+            </li>
+            <li>
+              Some underlying platforms may not support all of the features a
+              Java application expects. In these cases, the library
+              implementation can either emulate those features or provide a
+              consistent way to check for the presence of a specific feature.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+
+          <ul>
+            <li>
+              A general understanding of the Internet and the World Wide Web
+              (WWW).
+            </li>
+            <li>Good working knowledge of C and C++.</li>
+            <li>
+              Java is also a platform, which means that Java code can run on any
+              machine that has a Java Virtual Machine (JVM) on it.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Java">
+        <header>Java</header>
+        <article>
+          <p>
+            In contrast to Java's compile-time system of classes built by
+            declarations, JavaScript supports a runtime system based on a small
+            number of data types representing numeric, Boolean, and string
+            values. JavaScript has a prototype-based object model instead of the
+            more common class-based object model. The prototype-based model
+            provides dynamic inheritance; that is, what is inherited can vary
+            for individual objects. JavaScript also supports functions without
+            any special declarative requirements. Functions can be properties of
+            objects, executing as loosely typed methods.
+          </p>
+          <p>
+            ava is a general purpose programming language, much like Python or
+            JavaScript. The language itself is specifically an object oriented
+            programming language, so bears similarities to C++, C#. Java is also
+            a platform, which means that Java code can run on any machine that
+            has a Java Virtual Machine (JVM) on it. Originally those two things
+            were interchangeable, and the only thing that ran on the JVM was
+            Java. But since that time, a number of languages have been written
+            which can run on the Java platform, languages like Scala, Groovy, an
+            implementation of Ruby called jRuby, and an implementation of Python
+            called Jython.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+          To get started with writing Java, open the Visual Studio Code code and
+          write your first "Hello world" Java code:
+          <code
+            >class HelloWorld { // Your program begins with a call to main(). //
+            Prints "Hello, World" to the terminal window. public static void
+            main(String args[]) { System.out.println("Hello, World"); } }
+          </code>
+
+          Select the code in the pad and hit Ctrl+R to watch it unfold in your
+          browser!
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>
+          Variable in Java is a data container that saves the data values during
+          Java program execution. Every variable is assigned a data type that
+          designates the type and quantity of value it can hold. Variable is a
+          memory location name of the data.
+        </p>
+        <p>
+          Variable in Java is a data container that saves the data values during
+          Java program execution. Every variable is assigned a data type that
+          designates the type and quantity of value it can hold. Variable is a
+          memory location name of the data. A variable is a name given to a
+          memory location. For More On Variables please check Variables in Java.
+        </p>
+        <p>
+          A variable name can consist of Capital letters A-Z, lowercase letters
+          a-z digits 0-9, and two special characters such as _ underscore and $
+          dollar sign. The first character must be a letter. Blank spaces cannot
+          be used in variable names. Java keywords cannot be used as variable
+          names. Variable names are case-sensitive. The maximum length of the
+          variable is 64 characters. Variable names always should exist on the
+          left-hand side of assignment operators.
+        </p>
+      </section>
+      <section class="main-section" id="Declaring_variables">
+        <header>Declaring variables</header>
+        <article>
+          You can declare a variable in three ways:
+          <p>
+            With the keyword var. For example, <code>var x = 42.</code> This
+            syntax can be used to declare both local and global variables.
+          </p>
+          <p>
+            By simply assigning it a value. For example,
+            <code>x = 42.</code> This always declares a global variable. It
+            generates a strict JavaScript warning. You shouldn't use this
+            variant.
+          </p>
+          <p>
+            With the keyword let. For example,<code> let y = 13.</code> This
+            syntax can be used to declare a block scope local variable. See
+            Variable scope below.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <article>
+          <p>
+            Scope of a variable is the part of the program where the variable is
+            accessible. Like C/C++, in Java, all identifiers are lexically (or
+            statically) scoped, i.e.scope of a variable can determined at
+            compile time and independent of function call stack. Java programs
+            are organized in the form of classes. Every class is part of some
+            package. Java scope rules can be covered under following categories.
+          </p>
+
+          <p>
+            These variables must be declared inside class (outside any
+            function). They can be directly accessed anywhere in class.We can
+            declare class variables anywhere in class, but outside methods.
+            Access specified of member variables doesn’t affect scope of them
+            within a class. Member variables can be accessed outside a class
+            with following rules
+          </p>
+          <code>if (true) { var x = 5; } System.out(x); // 5</code>
+          <p>
+            This behavior changes, when using the let declaration introduced in
+            ECMAScript 2015.
+          </p>
+
+          <code
+            >if (true) { let y = 5; } System.out(y); // ReferenceError: y is not
+            defined</code
+          >
+        </article>
+      </section>
+      <section class="main-section" id="Global_variables">
+        <header>Global variables</header>
+        <article>
+          <p>
+            To define a Global variable in java, the keyword static is used.
+            Java actually doesn’t have the concept of Global variable, it is
+            known as class variable ( static field ). These are the variables
+            that can be used by the entire class.
+          </p>
+
+          <p>
+            To define the Global Variable, you can just use the static Keyword
+            like this: public class Example { public static int a; public static
+            int b; }
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <article>
+          <p>
+            You can create a read-only, named constant with the const keyword.
+            The syntax of a constant identifier is the same as for a variable
+            identifier: it must start with a letter, underscore or dollar sign
+            and can contain alphabetic, numeric, or underscore characters.
+          </p>
+
+          <code>const PI = 3.14;</code>
+          <p>
+            A constant cannot change value through assignment or be re-declared
+            while the script is running. It has to be initialized to a value.
+          </p>
+
+          <p>
+            The scope rules for constants are the same as those for let block
+            scope variables. If the const keyword is omitted, the identifier is
+            assumed to represent a variable.
+          </p>
+
+          <p>
+            You cannot declare a constant with the same name as a function or
+            variable in the same scope. For example:
+          </p>
+
+          <code
+            >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+            //statements }</code
+          >
+          However, object attributes are not protected, so the following
+          statement is executed without problems.
+          <code
+            >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+            "otherValue";</code
+          >
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p>The latest ECMAScript standard defines Eight data types:</p>
+          <ul>
+            <li>
+              <p>Eight data types that are primitives:</p>
+              <ul>
+                <li>Boolean. true and false.</li>
+                <li>
+                  byte: The byte data type is an 8-bit signed two’s complement
+                  integer. The byte data type is useful for saving memory in
+                  large arrays. Syntax: byte byteVar;
+                </li>
+                <li>
+                  short: The short data type is a 16-bit signed two’s complement
+                  integer. Similar to byte, use a short to save memory in large
+                  arrays, in situations where the memory savings actually
+                  matters. Syntax: short shortVar;
+                </li>
+                <li>
+                  int: It is a 32-bit signed two’s complement integer. Syntax:
+                  int intVar;
+                </li>
+                <li>
+                  long: The long data type is a 64-bit two’s complement integer.
+                  Syntax: long longVar;
+                </li>
+                <li>
+                  float: The float data type is a single-precision 32-bit IEEE
+                  754 floating-point. Use a float (instead of double) if you
+                  need to save memory in large arrays of floating-point numbers.
+                  Syntax: float floatVar;
+                </li>
+              </ul>
+            </li>
+            <li>
+              double: The double data type is a double-precision 64-bit IEEE 754
+              floating-point. For decimal values, this data type is generally
+              the default choice. Syntax: double doubleVar;
+            </li>
+            <li>
+              char: The char data type is a single 16-bit Unicode character.
+              Syntax: char charVar;
+            </li>
+          </ul>
+          The Reference Data Types will contain a memory address of variable
+          values because the reference types won’t store the variable value
+          directly in memory. They are strings, objects, arrays, etc.
+        </article>
+      </section>
+      <section class="main-section" id="if...else_statement">
+        <header>if...else statement</header>
+        <article>
+          Use the if statement to execute a statement if a logical condition is
+          true. Use the optional else clause to execute a statement if the
+          condition is false. An if statement looks as follows:
+
+          <code>if (condition) { statement_1; } else { statement_2; }</code>
+          condition can be any expression that evaluates to true or false. See
+          Boolean for an explanation of what evaluates to true and false. If
+          condition evaluates to true, statement_1 is executed; otherwise,
+          statement_2 is executed. statement_1 and statement_2 can be any
+          statement, including further nested if statements.
+          <p>
+            You may also compound the statements using else if to have multiple
+            conditions tested in sequence, as follows:
+          </p>
+          <code
+            >if (condition_1) { statement_1; } else if (condition_2) {
+            statement_2; } else if (condition_n) { statement_n; } else {
+            statement_last; }
+          </code>
+          In the case of multiple conditions only the first logical condition
+          which evaluates to true will be executed. To execute multiple
+          statements, group them within a block statement ({ ... }) . In
+          general, it's good practice to always use block statements, especially
+          when nesting if statements:
+
+          <code
+            >if (condition) { statement_1_runs_if_condition_is_true;
+            statement_2_runs_if_condition_is_true; } else {
+            statement_3_runs_if_condition_is_false;
+            statement_4_runs_if_condition_is_false; }</code
+          >
+          It is advisable to not use simple assignments in a conditional
+          expression, because the assignment can be confused with equality when
+          glancing over the code. For example, do not use the following code:
+          <code>if (x = y) { /* statements here */ }</code> If you need to use
+          an assignment in a conditional expression, a common practice is to put
+          additional parentheses around the assignment. For example:
+
+          <code>if ((x = y)) { /* statements here */ }</code>
+        </article>
+      </section>
+      <section class="main-section" id="while_statement">
+        <header>while statement</header>
+        <article>
+          A while statement executes its statements as long as a specified
+          condition evaluates to true. A while statement looks as follows:
+
+          <code>while (condition) statement</code> If the condition becomes
+          false, statement within the loop stops executing and control passes to
+          the statement following the loop.
+
+          <p>
+            The condition test occurs before statement in the loop is executed.
+            If the condition returns true, statement is executed and the
+            condition is tested again. If the condition returns false, execution
+            stops and control is passed to the statement following while.
+          </p>
+
+          <p>
+            To execute multiple statements, use a block statement ({ ... }) to
+            group those statements.
+          </p>
+
+          Example:
+
+          <p>
+            The following while loop iterates as long as n is less than three:
+          </p>
+
+          <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+          <p>
+            With each iteration, the loop increments n and adds that value to x.
+            Therefore, x and n take on the following values:
+          </p>
+
+          <ul>
+            <li>After the first pass: n = 1 and x = 1</li>
+            <li>After the second pass: n = 2 and x = 3</li>
+            <li>After the third pass: n = 3 and x = 6</li>
+          </ul>
+          <p>
+            After completing the third pass, the condition n &lt; 3 is no longer
+            true, so the loop terminates.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Function_declarations">
+        <header>Function declarations</header>
+        <article>
+          A function definition (also called a function declaration, or function
+          statement) consists of the function keyword, followed by:
+
+          <ul>
+            <li>The name of the function.</li>
+            <li>
+              A list of arguments to the function, enclosed in parentheses and
+              separated by commas.
+            </li>
+            <li>
+              The Java statements that define the function, enclosed in curly
+              brackets, { }.
+            </li>
+          </ul>
+          <p>
+            For example, the following code defines a simple function named
+            square:
+          </p>
+
+          <code>function square(number) { return number * number; }</code>
+          <p>
+            The function square takes one argument, called number. The function
+            consists of one statement that says to return the argument of the
+            function (that is, number) multiplied by itself. The return
+            statement specifies the value returned by the function.
+          </p>
+          <code>return number * number;</code>
+          <p>
+            Primitive parameters (such as a number) are passed to functions by
+            value; the value is passed to the function, but if the function
+            changes the value of the parameter, this change is not reflected
+            globally or in the calling function.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://www.geeksforgeeks.org/data-types-in-java/?ref=lbp"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
